@@ -1,0 +1,11 @@
+docker run -d --name spawning-pool --restart=on-failure --env MYSQL_ROOT_PASSWORD=Kerrigan --env MYSQL_DATABASE=zerglings -v hatchery:/var/lib/mysql  mysql
+
+# -d = background
+# --name spawning-pool (given)
+# --restart=on-failure (obviously)
+# --env = Set environment variables
+# 1. MYSQL_ROOT_PASSWORD = database password
+# 2. MYSQL_DATABASE  = database name
+# -v = volume list
+# /var/lib/mysql = default directory where MySQL container writes files
+# mysql : [version] MySQL version you want

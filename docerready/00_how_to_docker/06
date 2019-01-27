@@ -1,0 +1,13 @@
+docker run -d -p 5000:80 --name overlord --restart=always nginx
+# -d (detach) = Run container in background
+# --name 'name' = Assign name
+# -p = Publish a container's ports to the host, HOST PORT:CONTAINER PORT
+# --restart = able to restart on its own
+
+# in my case http://192.168.99.100:5000
+# and you will see
+#Welcome to nginx!
+#If you see this page, the nginx web server is successfully installed and working. Further configuration is required.
+#For online documentation and support please refer to nginx.org.
+#Commercial support is available at nginx.com.
+#Thank you for using nginx.
